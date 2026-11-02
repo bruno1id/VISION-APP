@@ -1,5 +1,5 @@
 <!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Vision Tour</title>
+<title>João Pessoa Tour</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -276,12 +276,12 @@ table.src-t th{font-size:11.5px;color:var(--ink-2);font-weight:600;text-transfor
 
 <div class="app" id="app">
   <header class="top">
-    <button class="logo" id="logoBtn" aria-label="Vision Tour — início">
+    <button class="logo" id="logoBtn" aria-label="João Pessoa Tour — início">
       <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="12" fill="var(--ocean)"/><circle cx="13" cy="15" r="5" fill="var(--sunset)"/><path d="M2 17c3-2 5-2 8 0s5 2 8 0 5-2 6 0v5H2z" fill="var(--reef)"/></svg>
-      Vision<b>Tour</b>
+      João Pessoa <b>Tour</b>
     </button>
     <button class="iconbtn" id="searchBtn" aria-label="Buscar"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></button>
-    <button class="ai-pill" id="aiBtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18 9.4l-4.2 1.8L12 16l-1.8-4.8L6 9.4l4.2-1.8z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>Vision IA</button>
+    <button class="ai-pill" id="aiBtn" aria-label="João Pessoa IA"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.6L18 9.4l-4.2 1.8L12 16l-1.8-4.8L6 9.4l4.2-1.8z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg>IA</button>
   </header>
   <main id="main"></main>
   <nav class="nav" aria-label="Navegação principal"><div class="nav-in" id="nav"></div></nav>
@@ -466,7 +466,7 @@ const PLACES = [
  {id:"piscinas-seixas",name:"Piscinas naturais do Seixas",cat:"Passeios de barco",kind:"reef",zone:"sul",bairro:"Seixas",city:"João Pessoa",
   lat:-7.1520,lon:-34.7830,precise:false,
   desc:"Recifes que formam piscinas de água clara na maré baixa, em frente ao Seixas. O acesso é feito por embarcações de operadores locais.",
-  hours:null, hoursNote:"Saídas dependem da tábua de marés e do operador. O Vision Tour ainda não tem operador integrado: disponibilidade não confirmada.",
+  hours:null, hoursNote:"Saídas dependem da tábua de marés e do operador. O João Pessoa Tour ainda não tem operador integrado: disponibilidade não confirmada.",
   price:null, tags:["barco","aventura","familia"],
   photo:"Piscinas naturais dos seixas, joao pessoa, paraiba.png",img:"piscinas",imgAlt:"Catamarã ancorado sobre os recifes de água turquesa, com banhistas nadando ao redor",
   sources:[["Wikimedia Commons","https://commons.wikimedia.org/wiki/File:Piscinas_naturais_dos_seixas,_joao_pessoa,_paraiba.png"]]},
@@ -1249,7 +1249,7 @@ function viewHome(){
       <p class="sec-note">Hoje o sol se põe às <b class="mono">${sj.set}</b> (cálculo astronômico para a Praia do Jacaré).</p>
       <div class="rail">${P(["jacare","hotel-globo","farol","seixas"]).map(placeCard).join("")}</div></section>
 
-    <section class="sec"><div class="ai-band"><img class="bgimg" src="${IMG.noite}" alt="Orla de João Pessoa iluminada à noite" loading="lazy"><span class="bgshade"></span><h2>Não sabe para onde ir? Converse com o Vision IA.</h2><p>Conte onde você está, com quem viaja e quanto quer gastar. A IA consulta os lugares e eventos do app e diz o que está confirmado e o que não está.</p><button class="cta" data-ai="1">Conversar agora</button></div></section>
+    <section class="sec"><div class="ai-band"><img class="bgimg" src="${IMG.noite}" alt="Orla de João Pessoa iluminada à noite" loading="lazy"><span class="bgshade"></span><h2>Não sabe para onde ir? Converse com o João Pessoa IA.</h2><p>Conte onde você está, com quem viaja e quanto quer gastar. A IA consulta os lugares e eventos do app e diz o que está confirmado e o que não está.</p><button class="cta" data-ai="1">Conversar agora</button></div></section>
 
     <section class="sec"><div class="sec-h"><h2>Passeios e aventuras</h2><button class="more" data-cat="Passeios de barco">Ver todos</button></div>
       <p class="sec-note">Passeios de barco dependem da maré. Nenhum operador está integrado ainda, então não exibimos disponibilidade.</p>
@@ -1272,7 +1272,7 @@ function viewHome(){
     <section class="sec"><div class="sec-h"><h2>Recomendados para você</h2><button class="more" data-plan="1">Montar roteiro</button></div>
       <p class="sec-note">${esc(rec.why)}</p>
       <div class="rail">${rec.items.map(placeCard).join("")}</div></section>
-    <footer class="foot"><span>Dados conferidos em ${fmtDate(VERIFIED_AT)}. Fotos reais enviadas pela equipe Vision Tour; nos demais cards, link para a foto licenciada no Wikimedia Commons.</span><span>Prévia do Vision Tour · ainda sem backend, login ou fontes automáticas.</span></footer>
+    <footer class="foot"><span>Dados conferidos em ${fmtDate(VERIFIED_AT)}. Fotos reais enviadas pela equipe João Pessoa Tour; nos demais cards, link para a foto licenciada no Wikimedia Commons.</span><span>Prévia do João Pessoa Tour · ainda sem backend, login ou fontes automáticas.</span></footer>
   </div>`;
 }
 const BAIRRO_ORDER=["Tambaú","Cabo Branco","Manaíra","Bessa","Seixas","Jardim Cidade Universitária","Bairro dos Estados"];
@@ -1295,7 +1295,7 @@ function viewExplore(){
   return `<div class="wrap"><div class="pagetitle"><h1>Explorar</h1><p>${PLACES.length} lugares com fonte conferida. Toque para ver detalhes, rota e fontes.</p></div>
   <div class="sec" style="padding-top:14px"><div class="chips" role="group" aria-label="Categorias">${all.map(c=>`<button class="chip" data-setcat="${c}" aria-pressed="${state.cat===c}">${c}</button>`).join("")}</div>
   <div class="filters"><label class="meta" for="bairroSel">Estou em</label><select class="sel" id="bairroSel">${Object.keys(BAIRROS).map(k=>`<option ${k===state.bairro?"selected":""}>${k}</option>`).join("")}</select><select class="sel" id="sortSel" aria-label="Ordenar"><option value="rel">Ordem padrão</option><option value="dist" ${state.sort==="dist"?"selected":""}>Mais perto</option></select></div>
-  <div class="list">${state.cat==="Restaurantes"&&state.sort!=="dist"?restoByBairro().map(([b,l])=>`<div class="bairro-h"><h3>${esc(b)}</h3><span>${l.length}</span></div>${l.map(rowCard).join("")}`).join(""):list.length?list.map(rowCard).join(""):empty("Nada nesta categoria ainda","Experimente outra categoria ou pergunte ao Vision IA.")}</div></div>
+  <div class="list">${state.cat==="Restaurantes"&&state.sort!=="dist"?restoByBairro().map(([b,l])=>`<div class="bairro-h"><h3>${esc(b)}</h3><span>${l.length}</span></div>${l.map(rowCard).join("")}`).join(""):list.length?list.map(rowCard).join(""):empty("Nada nesta categoria ainda","Experimente outra categoria ou pergunte ao João Pessoa IA.")}</div></div>
   <div class="sec"><div class="sec-h"><h2>Agenda</h2></div>${agendaBlock()}</div></div>`;
 }
 function agendaBlock(){
@@ -1393,7 +1393,7 @@ function viewHomes(){
       <label class="full" for="hfObs">Algo mais?<input id="hfObs" maxlength="140" placeholder="ex.: perto da praia, com varanda" value="${esc(f.obs||"")}"></label>
       <button class="btn sun full" type="submit">Montar mensagem para a corretora</button>
     </form>
-    ${state.homeMsg?`<div class="mapcard"><b>Sua mensagem</b><span style="white-space:pre-wrap;font-size:14.5px">${esc(state.homeMsg)}</span><a class="btn sun" href="mailto:${BROKER.email}?subject=${encodeURIComponent("Vision Tour – pedido de imóvel de "+(f.nome||"cliente"))}&body=${encodeURIComponent(state.homeMsg)}" target="_blank" rel="noopener noreferrer">Enviar por e-mail para a corretora</a><div class="actions" style="grid-template-columns:1fr 1fr"><button class="btn" data-copymsg="1">Copiar texto</button><a class="btn primary" href="${BROKER.dm}" target="_blank" rel="noopener noreferrer">Abrir Instagram</a></div><span class="meta">Toque em “Enviar por e-mail” e confirme o envio no seu aplicativo de e-mail, ou copie o texto e mande pelo Instagram.</span></div>`:""}`;
+    ${state.homeMsg?`<div class="mapcard"><b>Sua mensagem</b><span style="white-space:pre-wrap;font-size:14.5px">${esc(state.homeMsg)}</span><a class="btn sun" href="mailto:${BROKER.email}?subject=${encodeURIComponent("João Pessoa Tour – pedido de imóvel de "+(f.nome||"cliente"))}&body=${encodeURIComponent(state.homeMsg)}" target="_blank" rel="noopener noreferrer">Enviar por e-mail para a corretora</a><div class="actions" style="grid-template-columns:1fr 1fr"><button class="btn" data-copymsg="1">Copiar texto</button><a class="btn primary" href="${BROKER.dm}" target="_blank" rel="noopener noreferrer">Abrir Instagram</a></div><span class="meta">Toque em “Enviar por e-mail” e confirme o envio no seu aplicativo de e-mail, ou copie o texto e mande pelo Instagram.</span></div>`:""}`;
   }
   return `<div class="wrap"><div class="pagetitle"><h1>Imóveis</h1><p>Hospedagem, compra e aluguel em João Pessoa com atendimento de corretora.</p></div>
   <div class="sec" style="padding-top:14px">${head}
@@ -1520,8 +1520,8 @@ function openSearch(q=""){
   ${r?`${r.free&&!r.ev.length?`<div class="verify"><span>ℹ︎</span><span>Nenhum evento tem gratuidade confirmada na nossa base. Abaixo, lugares de acesso livre.</span></div>`:""}
    ${r.ev.length?`<div class="sec-h"><h2 style="font-size:17px">Eventos</h2></div><div class="list">${r.ev.map(e=>eventCard(e).replace('class="ecard"','class="ecard" style="width:100%"')).join("")}</div>`:""}
    ${r.pl.length?`<div class="sec-h"><h2 style="font-size:17px">Lugares</h2></div><div class="list">${r.pl.slice(0,10).map(rowCard).join("")}</div>`:""}
-   ${!r.pl.length&&!r.ev.length?empty("Nada encontrado","Tente outras palavras ou pergunte ao Vision IA.",`<button class="btn sun" data-ai="1" style="align-self:flex-start">Perguntar à IA</button>`):""}
-   <button class="btn" data-ai-q="${esc(q)}" style="align-self:flex-start">Perguntar isso ao Vision IA</button>`
+   ${!r.pl.length&&!r.ev.length?empty("Nada encontrado","Tente outras palavras ou pergunte ao João Pessoa IA.",`<button class="btn sun" data-ai="1" style="align-self:flex-start">Perguntar à IA</button>`):""}
+   <button class="btn" data-ai-q="${esc(q)}" style="align-self:flex-start">Perguntar isso ao João Pessoa IA</button>`
   :`<div class="qs">${["Praia tranquila para ir hoje","Bar com música ao vivo","Passeio de barco no fim da tarde","Evento gratuito neste fim de semana","Lugar para ver o pôr do sol","Passeio para fazer com crianças","Forró","Dia de chuva"].map(s=>`<button data-q="${s}">${s}</button>`).join("")}</div>`}`;
   openSheet("Buscar",body);
   const f=$("#sForm");f.addEventListener("submit",ev=>{ev.preventDefault();const v=$("#sQ").value.trim();if(v){pushRecent(v);openSearch(v)}});
@@ -1529,10 +1529,10 @@ function openSearch(q=""){
 }
 function pushRecent(q){const r=store.get("recent",[]).filter(x=>x!==q);r.unshift(q);store.set("recent",r.slice(0,8))}
 
-/* ===================== Vision IA ===================== */
+/* ===================== João Pessoa IA ===================== */
 let chatTurns=[];let chatCtl=null;let samplePromise=null;
 function getSample(){if(!samplePromise){samplePromise=(window.claude&&window.claude.use)?window.claude.use("sample").catch(()=>null):Promise.resolve(null)}return samplePromise}
-const RULES=()=>`Você é a Vision IA, uma concierge turística (voz e persona femininas) do app Vision Tour, especializado em João Pessoa (PB). Hoje é ${fmtDate(todayISO())} (${todayISO()}), fuso de Fortaleza (UTC-3).
+const RULES=()=>`Você é a João Pessoa IA, uma concierge turística (voz e persona femininas) do app João Pessoa Tour, especializado em João Pessoa (PB). Hoje é ${fmtDate(todayISO())} (${todayISO()}), fuso de Fortaleza (UTC-3).
 REGRAS:
 - Responda em português do Brasil, tom acolhedor de guia local, curto e direto (até ~150 palavras, salvo roteiros). Fale no feminino ao se referir a si mesma. Suas respostas podem ser lidas em voz alta: prefira frases curtas e evite listas longas, tabelas e símbolos.
 - Use SOMENTE dados das ferramentas buscar_lugares, buscar_eventos, detalhes e sol. Não invente lugares, eventos, preços, horários, avaliações nem disponibilidade de passeios.
@@ -1546,7 +1546,7 @@ REGRAS:
 - Roteiros podem ter de 1 a 30 dias. Para roteiros, organize por dia em Manhã / Almoço / Tarde / Noite, agrupando lugares próximos (zonas: orla, orla-norte, sul, centro, cidade, cabedelo).
 Formato: texto simples, pode usar **negrito** e listas com "- ".`;
 const TOOLS=()=>[
- {name:"buscar_lugares",description:"Busca lugares da base do Vision Tour. Retorna lista com id, nome, categoria, bairro, cidade, zona, tags, horário (ou null se não confirmado) e preço (ou null).",
+ {name:"buscar_lugares",description:"Busca lugares da base do João Pessoa Tour. Retorna lista com id, nome, categoria, bairro, cidade, zona, tags, horário (ou null se não confirmado) e preço (ou null).",
   inputSchema:{type:"object",properties:{texto:{type:"string",description:"palavras-chave, ex.: praia tranquila"},tags:{type:"array",items:{type:"string",enum:["gratis","familia","romantico","vista","chuva","cultura","praia","calma","barco","aventura","noite","musica","festa","lgbt","passeio","gastronomia","regional","frutos-do-mar","sunset","sunrise","compras","forro","samba","rock","mpb","natureza"]}},zona:{type:"string"}}},
   execute:(i)=>{let l=PLACES;const tg=Array.isArray(i.tags)?i.tags.map(String):[];if(tg.length)l=l.filter(p=>tg.some(t=>p.tags.includes(t)));if(i.zona)l=l.filter(p=>p.zone===String(i.zona));if(i.texto){const r=search(String(i.texto)).pl.map(p=>p.id);if(r.length)l=[...l].sort((a,b)=>(r.indexOf(b.id)>-1)-(r.indexOf(a.id)>-1))}return l.slice(0,12).map(p=>({id:p.id,nome:p.name,categoria:p.cat,bairro:p.bairro,cidade:p.city,zona:p.zone,tags:p.tags,horario:p.hours,obs_horario:p.hoursNote||null,preco:p.price}))}},
  {name:"buscar_eventos",description:"Lista eventos ativos (de hoje em diante) entre duas datas ISO. Retorna id, título, categoria, estilo musical, data, fim, horário, local, cidade e status (confirmado | divulgado | aguardando).",
@@ -1576,13 +1576,13 @@ function miniCard(id){
 }
 function openAI(initial){
   const body=`<div class="chat" id="chat"></div>`;
-  const footer=`<div class="voicebar"><button type="button" class="vbtn" id="aiVoice" aria-pressed="${voice.on}">${voice.on?ICON.spk:ICON.spkOff}<span>${voice.on?"Voz ligada":"Ouvir respostas"}</span></button><span class="vstatus" id="aiVStatus" role="status"></span></div><form class="composer" id="aiForm"><button type="button" class="micbtn" id="aiMic" aria-label="Falar com a Vision IA">${ICON.mic}</button><textarea id="aiIn" rows="1" placeholder="Pergunte ou toque no microfone…" aria-label="Mensagem para a Vision IA"></textarea><button type="submit" id="aiSend">Enviar</button></form>`;
-  openSheet("Vision IA",body,{footer,onClose:()=>{chatCtl?.abort();stopSpeak();stopListen()}});
+  const footer=`<div class="voicebar"><button type="button" class="vbtn" id="aiVoice" aria-pressed="${voice.on}">${voice.on?ICON.spk:ICON.spkOff}<span>${voice.on?"Voz ligada":"Ouvir respostas"}</span></button><span class="vstatus" id="aiVStatus" role="status"></span></div><form class="composer" id="aiForm"><button type="button" class="micbtn" id="aiMic" aria-label="Falar com a João Pessoa IA">${ICON.mic}</button><textarea id="aiIn" rows="1" placeholder="Pergunte ou toque no microfone…" aria-label="Mensagem para a João Pessoa IA"></textarea><button type="submit" id="aiSend">Enviar</button></form>`;
+  openSheet("João Pessoa IA",body,{footer,onClose:()=>{chatCtl?.abort();stopSpeak();stopListen()}});
   drawChat();
   const f=$("#aiForm"),inp=$("#aiIn");
   f.addEventListener("submit",ev=>{ev.preventDefault();const v=inp.value.trim();if(v){inp.value="";askAI(v)}});
   inp.addEventListener("keydown",ev=>{if(ev.key==="Enter"&&!ev.shiftKey){ev.preventDefault();f.requestSubmit()}});
-  $("#aiVoice").addEventListener("click",()=>{voice.on=!voice.on;store.set("voice",voice.on);const b=$("#aiVoice");b.setAttribute("aria-pressed",voice.on);b.innerHTML=`${voice.on?ICON.spk:ICON.spkOff}<span>${voice.on?"Voz ligada":"Ouvir respostas"}</span>`;if(voice.on)speak("Oi! Eu sou a Vision IA. Pode falar comigo.");else stopSpeak()});
+  $("#aiVoice").addEventListener("click",()=>{voice.on=!voice.on;store.set("voice",voice.on);const b=$("#aiVoice");b.setAttribute("aria-pressed",voice.on);b.innerHTML=`${voice.on?ICON.spk:ICON.spkOff}<span>${voice.on?"Voz ligada":"Ouvir respostas"}</span>`;if(voice.on)speak("Oi! Eu sou a João Pessoa IA. Pode falar comigo.");else stopSpeak()});
   $("#aiMic").addEventListener("click",toggleListen);
   if(initial)askAI(initial);else setTimeout(()=>inp.focus(),60);
 }
@@ -1622,7 +1622,7 @@ function micFallback(){voice.handsFree=false;vstatus("O microfone não está lib
 function drawChat(pending){
   const c=$("#chat");if(!c)return;
   let h="";
-  if(!chatTurns.length&&!pending){h+=`<div class="msg a"><p>Olá! Eu sou a <b>Vision IA</b>. Consulto os lugares e a agenda do Vision Tour e separo o que está confirmado do que é sugestão. Onde você está hospedado e o que gostaria de fazer?</p></div><div class="qs">${["Estou em Tambaú. O que fazer hoje à noite?","Monte um roteiro romântico para amanhã","Quero ouvir forró ao vivo","Onde posso ver o pôr do sol?","O que fazer com crianças se chover?","Quais praias conhecer em 3 dias?","Estou com idosos. Passeios mais acessíveis?"].map(s=>`<button data-aiq="${s}">${s}</button>`).join("")}</div>`}
+  if(!chatTurns.length&&!pending){h+=`<div class="msg a"><p>Olá! Eu sou a <b>João Pessoa IA</b>. Consulto os lugares e a agenda do João Pessoa Tour e separo o que está confirmado do que é sugestão. Onde você está hospedado e o que gostaria de fazer?</p></div><div class="qs">${["Estou em Tambaú. O que fazer hoje à noite?","Monte um roteiro romântico para amanhã","Quero ouvir forró ao vivo","Onde posso ver o pôr do sol?","O que fazer com crianças se chover?","Quais praias conhecer em 3 dias?","Estou com idosos. Passeios mais acessíveis?"].map(s=>`<button data-aiq="${s}">${s}</button>`).join("")}</div>`}
   chatTurns.forEach(t=>{h+=t.role==="user"?`<div class="msg u">${esc(t.content)}</div>`:`<div class="msg a">${renderAI(t.content)}</div>`});
   if(pending)h+=`<div class="msg a" id="pend">${pending}</div>`;
   c.innerHTML=h;
@@ -1735,7 +1735,7 @@ function showItin(it,idx){
     if(e.target.closest("#itAI")){const q=`Revise este roteiro e sugira melhorias usando só a base: ${itinText(curItin)}`;closeSheet();openAI(q)}
   });
 }
-function itinText(it){return it.title+"\n"+it.days.map((d,i)=>`\nDia ${i+1} – ${fmtDate(d.date)}\n`+d.stops.map(s=>`• ${s.when}: ${stopInfo(s).name}`).join("\n")).join("")+"\n\nCriado no Vision Tour"}
+function itinText(it){return it.title+"\n"+it.days.map((d,i)=>`\nDia ${i+1} – ${fmtDate(d.date)}\n`+d.stops.map(s=>`• ${s.when}: ${stopInfo(s).name}`).join("\n")).join("")+"\n\nCriado no João Pessoa Tour"}
 
 /* ===================== util UI ===================== */
 let toastT;
@@ -1765,7 +1765,7 @@ function render(){
     const tab=state.homeTab;const g=id=>($(id)?.value||"").trim();
     state.homeForm={nome:g("#hfNome"),contato:g("#hfContato"),tipo:g("#hfTipo"),quartos:g("#hfQuartos"),prazo:g("#hfPrazo"),bairro:g("#hfBairro"),valor:g("#hfValor"),obs:g("#hfObs")};
     const F=state.homeForm;
-    state.homeMsg=`Olá, ${BROKER.name}! Vi seu contato no app Vision Tour.\nQuero ${tab==="comprar"?"comprar":"alugar"} ${F.tipo.toLowerCase()} em João Pessoa.\n• Nome: ${F.nome}\n• Contato: ${F.contato}\n• Bairro: ${F.bairro}\n• Quartos: ${F.quartos}`+(tab==="alugar"?`\n• Período: ${F.prazo}`:"")+(F.valor?`\n• Valor: ${F.valor}`:"")+(F.obs?`\n• Observações: ${F.obs}`:"");
+    state.homeMsg=`Olá, ${BROKER.name}! Vi seu contato no app João Pessoa Tour.\nQuero ${tab==="comprar"?"comprar":"alugar"} ${F.tipo.toLowerCase()} em João Pessoa.\n• Nome: ${F.nome}\n• Contato: ${F.contato}\n• Bairro: ${F.bairro}\n• Quartos: ${F.quartos}`+(tab==="alugar"?`\n• Período: ${F.prazo}`:"")+(F.valor?`\n• Valor: ${F.valor}`:"")+(F.obs?`\n• Observações: ${F.obs}`:"");
     render();setTimeout(()=>document.querySelector("[data-copymsg]")?.closest(".mapcard")?.scrollIntoView({block:"center"}),30)})}
   if(state.view==="profile"){const f=$("#evForm");f&&f.addEventListener("submit",e=>{e.preventDefault();
     const src=$("#evS").value.trim();if(!/^https:\/\//.test(src)){toast("Informe um link https da fonte oficial");return}
@@ -1799,8 +1799,8 @@ document.addEventListener("click",e=>{
   if(el=c("#allEv")){state.evRange="todos";render();document.querySelector(".seg")?.scrollIntoView({block:"center"});return}
   if(el=c("[data-mapf]")){state.mapFilter=el.dataset.mapf;state.mapSel=null;render();return}
   if(el=c("[data-pin]")){state.mapSel=el.dataset.pin;render();return}
-  if(el=c("[data-share]")){const p=placeById(el.dataset.share);copy(`${p.name} – ${p.bairro}, ${p.city}\nGoogle Maps: ${mapsUrl(p)}\nVia Vision Tour`,"Link copiado");return}
-  if(el=c("[data-evshare]")){const ev=eventById(el.dataset.evshare);copy(`${ev.title} – ${fmtDate(ev.date)}${ev.time?" "+ev.time:""} – ${evLoc(ev).name}\nFonte: ${ev.source[1]}\nVia Vision Tour`,"Evento copiado");return}
+  if(el=c("[data-share]")){const p=placeById(el.dataset.share);copy(`${p.name} – ${p.bairro}, ${p.city}\nGoogle Maps: ${mapsUrl(p)}\nVia João Pessoa Tour`,"Link copiado");return}
+  if(el=c("[data-evshare]")){const ev=eventById(el.dataset.evshare);copy(`${ev.title} – ${fmtDate(ev.date)}${ev.time?" "+ev.time:""} – ${evLoc(ev).name}\nFonte: ${ev.source[1]}\nVia João Pessoa Tour`,"Evento copiado");return}
   if(el=c("[data-itopen]")){showItin(store.get("itins",[])[+el.dataset.itopen],+el.dataset.itopen);return}
   if(el=c("[data-itshare]")){copy(itinText(store.get("itins",[])[+el.dataset.itshare]),"Roteiro copiado");return}
   if(el=c("[data-itdel]")){const its=store.get("itins",[]);its.splice(+el.dataset.itdel,1);store.set("itins",its);toast("Roteiro excluído");render();return}
